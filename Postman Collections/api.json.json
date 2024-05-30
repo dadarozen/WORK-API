@@ -1,0 +1,101 @@
+{
+	"info": {
+		"_postman_id": "b867e9d7-7d88-4fb3-87f7-d697014f93d4",
+		"name": "WORKAPI",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Inserting into API",
+			"id": "d9f0dd43-15a5-47ad-b698-f04e09ba9878",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "text",
+						"value": "aaa"
+					},
+					{
+						"key": "type",
+						"value": "bbbb"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "parentLastName",
+							"value": "c",
+							"type": "text"
+						},
+						{
+							"key": "parentFirstName",
+							"value": "c",
+							"type": "text"
+						},
+						{
+							"key": "parentCurrentAddress",
+							"value": "c",
+							"type": "text"
+						}
+					]
+				},
+				"url": "http://localhost:3000/insert-to-api"
+			},
+			"response": []
+		},
+		{
+			"name": "Get random",
+			"id": "da2a08d4-684d-4bdf-9f2d-5c7a5fa688da",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:3000/random"
+			},
+			"response": []
+		},
+		{
+			"name": "Insert from API to SQL",
+			"id": "18a909bd-66e2-4a7b-9208-144cf1084dba",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": "http://localhost:3000/insert-from-api"
+			},
+			"response": []
+		},
+		{
+			"name": "Delete All",
+			"id": "a03f69a1-8488-486a-ad0c-26123b6b3cb5",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "apikey",
+					"apikey": {
+						"in": "query",
+						"key": "key",
+						"value": "4VGP2DN-6EWM4SJ-N6FGRHV-Z3PR3TT"
+					}
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": "http://localhost:3000/all"
+			},
+			"response": []
+		}
+	]
+}
